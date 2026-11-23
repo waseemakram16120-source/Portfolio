@@ -1,3 +1,9 @@
+import cadetImg from "./assets/projects/cadettocsp.jpg";
+import mathImg from "./assets/projects/mathquest.jpg";
+import eventImg from "./assets/projects/eventflow.jpg";
+import interviewImg from "./assets/projects/interview-coach.jpg";
+import doctorImg from "./assets/projects/doctorhub.jpg";
+
 export const profile = {
   name: "Muhammad Waseem Akram",
   firstName: "Waseem",
@@ -129,6 +135,7 @@ export const projects = [
     tech: ["React", "Firebase", "Gemini AI", "Firestore"],
     language: "JavaScript",
     year: "2026",
+    image: cadetImg,
     live: "https://cadettocsp.vercel.app",
     code: "https://github.com/waseemakram16120-source/CadetToCSP",
   },
@@ -139,6 +146,8 @@ export const projects = [
     tech: ["React", "TypeScript", "Node.js", "Prisma", "Supabase"],
     language: "TypeScript",
     year: "2026",
+    image: mathImg,
+    badge: "FYP",
     live: null,
     code: "https://github.com/waseemakram16120-source/MathQuest",
   },
@@ -149,6 +158,7 @@ export const projects = [
     tech: ["React", "Vite", "Node.js", "Express", "MongoDB"],
     language: "JavaScript",
     year: "2026",
+    image: eventImg,
     live: "https://eventflow-murex.vercel.app",
     code: "https://github.com/waseemakram16120-source/EventManagementSystem",
   },
@@ -159,6 +169,7 @@ export const projects = [
     tech: ["JavaScript", "HTML", "CSS"],
     language: "JavaScript",
     year: "2026",
+    image: interviewImg,
     live: null,
     code: "https://github.com/waseemakram16120-source",
   },
@@ -169,6 +180,7 @@ export const projects = [
     tech: ["Web", "GitHub"],
     language: "JavaScript",
     year: "2026",
+    image: doctorImg,
     live: null,
     code: "https://github.com/waseemakram16120-source/doctorhub",
   },

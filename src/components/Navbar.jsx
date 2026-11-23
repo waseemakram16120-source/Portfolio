@@ -22,8 +22,8 @@ export default function Navbar({ theme, onToggleTheme }) {
         <a className="logo" href="#home">
           {profile.firstName}.<span>.</span>
         </a>
-        <button className="menu-btn" aria-label="Menu" onClick={() => setOpen((v) => !v)}>
-          ☰
+        <button className="menu-btn" aria-label="Menu" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+          {open ? "✕" : "☰"}
         </button>
         <nav>
           <ul className={`nav-links${open ? " open" : ""}`}>

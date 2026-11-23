@@ -26,6 +26,12 @@ export default function About() {
               <p>{profile.vision}</p>
             </div>
           </div>
+          <div className="stats-strip" aria-label="Work by the numbers">
+            <div className="stat"><strong>5+</strong><span>Projects Built</span></div>
+            <div className="stat"><strong>135+</strong><span>Exam Questions</span></div>
+            <div className="stat"><strong>90</strong><span>Interview Questions</span></div>
+            <div className="stat"><strong>6</strong><span>MathQuest Units</span></div>
+          </div>
         </div>
       </div>
     </section>

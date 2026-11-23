@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { projects } from "../data.js";
 
-const INITIALS = { CadetToCSP: "C", MathQuest: "M", EventFlow: "E", "AI Mock Interview Coach": "AI", doctorhub: "D" };
-
 export default function Projects() {
   const [query, setQuery] = useState("");
   const q = query.trim().toLowerCase();
@@ -32,8 +30,9 @@ export default function Projects() {
           {filtered.map((p) => (
             <article className="project-card" key={p.title}>
               <div className="project-banner">
+                <img src={p.image} alt={`${p.title} — project cover preview`} loading="lazy" />
                 <span className="lang">{p.language}</span>
-                {INITIALS[p.title] || "💻"}
+                {p.badge && <span className="fyp-badge">{p.badge}</span>}
               </div>
               <div className="project-body">
                 <h3>{p.title}</h3>
